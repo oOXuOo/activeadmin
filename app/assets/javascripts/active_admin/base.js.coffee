@@ -5,5 +5,6 @@
 #= require_tree ./lib
 #= require_tree ./ext
 #= require ./application
+#= require dataTables/jquery.dataTables
 
 window.ActiveAdmin = {}

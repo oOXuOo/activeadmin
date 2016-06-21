@@ -9,6 +9,7 @@ gem 'rails', rails_version
 
 jquery_ui_rails_version = rails_version > "4" ? "~> 5.0" : "~> 4.0"
 gem 'jquery-ui-rails', jquery_ui_rails_version
+gem 'jquery-datatables-rails', '~> 3.3.0'
 
 gem 'execjs', '~> 2.4.0' # ~> 2.5.0 works only for Ruby > 2.0
 

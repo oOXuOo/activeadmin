@@ -105,10 +105,10 @@ module ActiveAdmin
       def render_data(data, item)
         value = if data.is_a? Proc
           data.call item
-        elsif item.respond_to? data
-          item.public_send data
         elsif item.respond_to? :[]
           item[data]
+        elsif item.respond_to? data
+          item.public_send data
         end
         value = pretty_format(value) if data.is_a?(Symbol)
         value = status_tag value     if is_boolean? data, item
